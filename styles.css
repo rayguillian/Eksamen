@@ -1,0 +1,215 @@
+/* Reset margin and padding for the body and other elements */
+body, h1, p, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the body and font */
+body {
+    background-color: #f27229;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Style for the header */
+.header {
+    background-color: #ff5d00;
+    color: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.search-icon {
+    margin-right: 30px;
+}
+
+/* Style for the hero section */
+.hero {
+    background-color: #ff8146;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* Style for the email signup section */
+.email-signup {
+    background-color: #ffa600;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.email-signup input[type="email"] {
+    padding: 15px;
+    width: 80%;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.email-signup input[type="email"]::placeholder {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.email-signup button {
+    background-color: #f27229;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+}
+/* CSS for centering the "Sign Up" button */
+.center-button {
+    text-align: center;
+}
+
+
+/* Style for the upgrade section */
+.upgrade-section {
+    background-color: #ffbf00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.upgrade-section-text {
+    width: 60%;
+}
+
+.upgrade-section-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style for the image box */
+.image-box {
+    width: 35%;
+}
+
+.image-box img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Style for the carousel section */
+.carousel-section {
+    background-color: #ff8146;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.carousel-section h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.carousel div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f27229;
+}
+
+/* Style for the new sections */
+.new-section {
+    background-color: #ffbf00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.new-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style for the section image box */
+.section-image-box {
+    width: 35%;
+}
+
+.section-image-box img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Style for the final email sign-up section */
+.final-email-signup {
+    background-color: #ffa600;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.final-email-signup input[type="email"] {
+    padding: 15px;
+    width: 80%;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.final-email-signup input[type="email"]::placeholder {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.final-email-signup button {
+    background-color: #f27229;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #ff5d00;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

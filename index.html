@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jabs! Your New Dream Home</title>
+    <style>
+        /* Reset margin and padding for the body and other elements */
+        body, h1, p, input, button {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the body and font */
+        body {
+            background-color: #f27229;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Style for the header */
+        header {
+            background-color: #ffbf00; /* Orange background */
+            color: #fff;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        .search-icon {
+            margin-right: 30px;
+        }
+
+        /* Style for the hero section */
+        .hero {
+            background-color: #ff8146;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        /* Style for the email signup section */
+        .email-signup {
+            background-color: #ffa600;
+            padding: 40px 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .email-signup input[type="email"] {
+            padding: 15px;
+            width: 80%;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .email-signup input[type="email"]::placeholder {
+            color: #ccc;
+            font-size: 16px;
+        }
+
+        .email-signup button.center-button {
+            background-color: #f27229;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        /* Style for the upgrade section */
+        .upgrade-section {
+            background-color: #ffbf00;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px;
+        }
+
+        .upgrade-section-text {
+            width: 60%;
+        }
+
+        .upgrade-section-text h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Style for the image box */
+        .image-box {
+            width: 35%;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Style for the carousel section */
+        .carousel-section {
+            background-color: #ff8146;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .carousel-section h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            width: 100%;
+            transition: transform 0.5s;
+        }
+
+        .carousel div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f27229;
+        }
+
+        /* Style for the new sections */
+        .new-section {
+            background-color: #ffbf00;
+            display: flex;
+            justify-content: space between;
+            align-items: center;
+            padding: 60px;
+        }
+
+        .section-text {
+            width: 50%;
+        }
+
+        .section-text h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .section-image-box {
+            width: 40%;
+        }
+
+        .section-image-box img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Style for the final email sign-up section */
+        .final-email-signup {
+            background-color: #ffa600;
+            padding: 40px 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .final-email-signup input[type="email"] {
+            padding: 15px;
+            width: 80%;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .final-email-signup input[type="email"]::placeholder {
+            color: #ccc;
+            font-size: 16px;
+        }
+
+        .final-email-signup button.center-button {
+            background-color: #f27229;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        /* Style for the footer */
+        .footer {
+            background-color: #ffbf00; /* Orange background */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <div class="search-icon">
+            <img src="search-icon.png" alt="Search">
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Jabs! Your New Dream Home</h1>
+        <p>Find your dream home with a swipe!</p>
+    </div>
+
+    <div class="email-signup">
+        <input type="email" id="email" placeholder="Enter your email here!">
+        <button class="center-button">Sign Up!</button>
+    </div>
+
+    <div class="upgrade-section">
+        <div class="upgrade-section-text">
+            <h1>Ready to Upgrade Your Rental Experience?</h1>
+            <p>Are you tired of scrolling endlessly through outdated rental websites? Bid farewell to the hassle and become a part of Jabs, the groundbreaking rental platform that makes discovering your ideal home a breeze. With Jabs, you're in control as you swipe through potential homes, effortlessly matching with compatible renters. Welcome to the future of renting, where simplicity, affordability, and social connections merge to create an unparalleled rental experience.</p>
+        </div>
+        <div class="image-box">
+            <img src="your-image.jpg" alt="Image">
+        </div>
+    </div>
+
+    <div class="carousel-section">
+        <h1>Explore Seamless Living: Dive into Our Mobile Experience</h1>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- First new section -->
+    <div class="new-section">
+        <div class="section-text">
+            <h1>A User-Friendly Interface</h1>
+            <p>Our user-friendly platform has been meticulously crafted with your needs in mind. Intuitive and straightforward, Jabs ensures a seamless browsing experience, even for those who may not be tech-savvy. From viewing photos to connecting with potential landlords or tenants, every step is effortless, ensuring that your journey to finding a new home is enjoyable and stress-free.</p>
+        </div>
+        <div class="section-image-box">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+    </div>
+
+    <!-- Second new section -->
+    <div class="new-section">
+        <div class="section-image-box">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class "section-text">
+            <h1>Join Our Community</h1>
+            <p>At Jabs, we recognize the significance of connections. That's why we've established a vibrant community of renters and landlords who are enthusiastic about finding their ideal match. Share your experiences, seek advice, and collaborate with kindred spirits. The Jabs community is where you'll find support, inspiration, and possibly even your future roommate!</p>
+        </div>
+    </div>
+
+    <!-- Third new section, same as the first new section -->
+    <div class="new-section">
+        <div class="section-text">
+            <h1>A User-Friendly Interface</h1>
+            <p>Our user-friendly platform has been meticulously crafted with your needs in mind. Intuitive and straightforward, Jabs ensures a seamless browsing experience, even for those who may not be tech-savvy. From viewing photos to connecting with potential landlords or tenants, every step is effortless, ensuring that your journey to finding a new home is enjoyable and stress-free.</p>
+        </div>
+        <div class="section-image-box">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+    </div>
+
+    <!-- Final email sign-up section -->
+    <div class="final-email-signup">
+        <input type="email" id="final-email" placeholder="Enter your email here!">
+        <button class="center-button">Sign Up!</button>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        <p>&copy; 2023 Jabs! Your New Dream Home | All Rights Reserved</p>
+    </div>
+</body>
+</html>
